@@ -54,14 +54,14 @@ return [
             'url' => env('APP_URL').'/storage',
             'visibility' => 'public',
         ],
-
         's3' => [
             'driver' => 's3',
-            'key' => env('AWS_ACCESS_KEY_ID'),
-            'secret' => env('AWS_SECRET_ACCESS_KEY'),
-            'region' => env('AWS_DEFAULT_REGION'),
-            'bucket' => env('AWS_BUCKET'),
-            'url' => env('AWS_URL'),
+            'key' => env('AWS_ACCESS_KEY_ID','TJB22MFV7BXW6J77JY7B'),
+            'secret' => env('AWS_SECRET_ACCESS_KEY','2HQJZYn/Wcn2iIEaXMGf8+C84boz0kQmzT1aWS3JACw'),
+            'endpoint' => env('AWS_DEFAULT_ENDPOINT','https://nyc3.digitaloceanspaces.com'),
+            'region' => env('AWS_DEFAULT_REGION','nyc3'),
+            'bucket' => env('AWS_BUCKET','zuko'),
+            'url' => env('AWS_URL','https://zuko.nyc3.digitaloceanspaces.com'),
         ],
 
     ],

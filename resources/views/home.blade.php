@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('fusehtml.layout',['pageTitle' => 'HOME','useAside' => false,'useQuickPannel' => false])
 
 @section('content')
 <div class="container">

@@ -35,7 +35,8 @@ return [
     'channels' => [
         'stack' => [
             'driver' => 'stack',
-            'channels' => ['single'],
+            'tap' => [\Freshbitsweb\LaravelLogEnhancer\LogEnhancer::class],
+            'channels' => ['single','slack'],
         ],
 
         'single' => [
@@ -54,9 +55,9 @@ return [
         'slack' => [
             'driver' => 'slack',
             'url' => env('LOG_SLACK_WEBHOOK_URL'),
-            'username' => 'Laravel Log',
+            'username' => 'The ReturnZ',
             'emoji' => ':boom:',
-            'level' => 'critical',
+            'level' => 'debug',
         ],
 
         'stderr' => [
@@ -76,6 +77,10 @@ return [
             'driver' => 'errorlog',
             'level' => 'debug',
         ],
+        'production_stack' => [
+            'driver' => 'stack',
+            'tap' => [\Freshbitsweb\LaravelLogEnhancer\LogEnhancer::class],
+            'channels' => ['daily','slack','syslog'],
+        ],
     ],
-
 ];

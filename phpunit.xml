@@ -29,4 +29,7 @@
         <env name="QUEUE_DRIVER" value="sync"/>
         <env name="MAIL_DRIVER" value="array"/>
     </php>
+  <listeners>
+    <listener class="NunoMaduro\Collision\Adapters\Phpunit\Listener" />
+  </listeners>
 </phpunit>

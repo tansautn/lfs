@@ -2,6 +2,7 @@
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
     </IfModule>
+#    Options +FollowSymLinks
 
     RewriteEngine On
 
@@ -15,7 +16,9 @@
     RewriteRule ^ %1 [L,R=301]
 
     # Handle Front Controller...
+#    RewriteCond %{REQUEST_URI} !\.(css|js|jpg|jpeg|png|svg|gif|ttf|otf|woff|woff2|ico)$
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-l
     RewriteRule ^ index.php [L]
 </IfModule>

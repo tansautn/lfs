@@ -3,5 +3,8 @@
     Options +FollowSymLinks
     RewriteRule ^public/ - [NC,L]
     RewriteRule ^$ public/ [L]
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-l
     RewriteRule (.*) public/$1 [L]
 </IfModule>
