@@ -90,9 +90,9 @@
     @endphp
     <li class="nav-item {{ implode(" ", $listItemClass) }}" role="tab">
         <a @if($hasChildren)
-            @php
-            $aClasses = ['with-arrow', 'collapsed'];
-            @endphp
+           @php
+               $aClasses = ['with-arrow', 'collapsed'];
+           @endphp
            data-toggle="collapse" data-target="#collapse-charts" aria-expanded="false" aria-controls="collapse-charts"
            @endif
            class="nav-link ripple {{ implode(" ", $aClasses) }}" {!! $linkAttributes !!} target="{{ $item->target }}">

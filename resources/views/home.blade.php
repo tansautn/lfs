@@ -1,23 +1,21 @@
-@extends('fusehtml.layout',['pageTitle' => 'HOME','useAside' => false,'useQuickPannel' => false])
+@extends('fusehtml.layout',['pageTitle' => 'HOME','useAside' => true,'useQuickPannel' => false])
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
+<div class="container bg-fuse-dark text-auto">
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+        <div class="card bg-fuse-dark text-auto">
+            <div class="card-header">Dashboard</div>
 
-                    You are logged in!
-                </div>
+            <div class="card-body bg-fuse-dark text-auto">
+                @if (session('status'))
+                    <div class="alert alert-success">
+                        {{ session('status') }}
+                    </div>
+                @endif
+
+                You are logged in!
             </div>
         </div>
-    </div>
+
 </div>
 @endsection

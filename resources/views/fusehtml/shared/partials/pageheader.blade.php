@@ -34,9 +34,9 @@
                                                                     <span class="h2">Welcome back, John!</span>
                                                                 </div>
 
-                                                                <button type="button" class="sidebar-toggle-button btn btn-icon d-block d-xl-none" data-fuse-bar-toggle="dashboard-project-sidebar" aria-label="Toggle sidebar">
-                                                                    <i class="icon icon-menu"></i>
-                                                                </button>
+                                                                {{--<button type="button" class="sidebar-toggle-button btn btn-icon d-block d-xl-none" data-fuse-bar-toggle="dashboard-project-sidebar" aria-label="Toggle sidebar">--}}
+                                                                    {{--<i class="icon icon-menu"></i>--}}
+                                                                {{--</button>--}}
                                                             </div>
 
                                                         </div>

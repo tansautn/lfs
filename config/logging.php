@@ -36,7 +36,7 @@ return [
         'stack' => [
             'driver' => 'stack',
             'tap' => [\Freshbitsweb\LaravelLogEnhancer\LogEnhancer::class],
-            'channels' => ['single','slack'],
+            'channels' => ['daily'],
         ],
 
         'single' => [

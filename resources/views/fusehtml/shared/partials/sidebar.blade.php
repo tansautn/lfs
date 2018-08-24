@@ -27,7 +27,7 @@
 ?>            <aside id="aside" class="aside aside-left" data-fuse-bar="aside" data-fuse-bar-media-step="md" data-fuse-bar-position="left">
                 <div class="aside-content-wrapper">
 
-                    <div class="aside-content bg-primary-700 text-auto">
+                    <div class="aside-content bg-deep-purple-100 text-auto">
 
                         <div class="aside-toolbar">
 

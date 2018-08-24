@@ -44,9 +44,4 @@ class LoginController extends Controller
     {
         return 'username';
     }
-
-    public function redirectTo()
-    {
-        return response()->redirectToIntended('/')->getPathUri();
-    }
 }
